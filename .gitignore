@@ -1,0 +1,25 @@
+#virtual environment
+.venv/
+
+#sqlite db
+db.sqlite3
+
+#django migration cache
+__pycache__/
+
+#compiled python files
+*.pyc
+*.pyo
+
+#environment variables file
+.env
+
+#vscode settings
+.vscode/
+
+#ignore log files (may be created by django or other processes)
+*.log
+
+#ignore static and media files as in production they are served by the webserver
+#staticfiles/
+#media/
