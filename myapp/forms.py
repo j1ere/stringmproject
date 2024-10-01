@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import CustomUser
 
 class CustomUserCreationForm(UserCreationForm):
-    age = forms.CharField(max_length=10, default = '0')
+    age = forms.CharField(max_length=10)
 
     class Meta:
         model = CustomUser
@@ -11,7 +11,7 @@ class CustomUserCreationForm(UserCreationForm):
     
 
 class CustomAuthenticationForm(AuthenticationForm):
-    username = forms.Charfield(max_length= 10)
+    username = forms.CharField(max_length= 10)
     password = forms.CharField(label = 'password', widget=forms.PasswordInput)
 
 #done with forms for authentication
